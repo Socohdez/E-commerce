@@ -11,36 +11,77 @@
 
 <body>
     <header>
-        <img src="./imagenes/imagen6.jpg" alt="Logo">
-        <h1>¡Gracias por visitarnos!</h1>
-    </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="./index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="./quienes-somos.html">¿Quienes somos?</a>
-            </li>
-            <li>
-                <a href="./Contacto.html">Contacto</a>
-            </li>
-            <li>
-                <a href="./Servicios.html">Servicios</a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="navegacion">
+            <ul class="barra-nav">
+                <li class="nav_item">
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li class="nav_item">
+                    <a href="./quienes-somos.html">¿Quienes somos?</a>
+                </li>
+                <li class="nav_item">
+                    <a href="./Contacto.html">Contacto</a>
+                </li>
+                <li class="nav_item">
+                    <a href="./Servicios.html">Servicios</a>
+                </li>
+                <li class="nav_item">
+                    <input type="text" name="Busqueda" id="busqueda" placeholder="Buscar">
+                <li class="nav_item">
+                    <p>Carrito</p>
+            </ul>
+        </nav>
+        <div>
+            <img class="logo" src="./imagenes/imagen6.jpg" alt="Logo">
+            <h1 class="tituloInicio" id="subtituloIndex ">Desarrollador Profesional frondEnd</h1>
+        </div>
 
-    <div>
-        <p id="texto">somos un equipo de expertos y confiables que resolvemos e implementamos soluciones que simplifican tu vida
-        </p>
-        <h2>Algunos de nuestros clientes</h2>
-        <img  class="clientes" src="./imagenes/clientes.png" alt="Logo2">
-    </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <p>Desarrollo seguro</p>
+                <img clas="imagen_pos" src="./imagenes/imagen3.jpg" alt="Programador trabajando">
+            </div>
+            <p id="texto">somos un equipo de expertos y confiables que resolvemos e implementamos soluciones que
+                simplifican tu vida </p>
+
+            <h2>Algunos de nuestros clientes</h2>
+            <div class="wrap">
+                <div class="galeria">
+                    <div class="imagen elemento1"><img src="/imagenes/cl1.png" alt="">
+                        <h3>Adrián Palacios</h3>
+                        <h4>Estados Unidos.</h4>
+                    </div>
+                    <div class="imagen elemento2"><img src="/imagenes/cl2.gif" alt="">
+                        <h3>Aguirre Cristian</h3>
+                        <h4>Santa Fe - Argentina
+                    </div>
+                    <div class="imagen elemento3"><img src="/imagenes/cl3.jpg" alt="">
+                        <h3>Andres Farias</h3>
+                        <h4>Ciudad de mexico</h4>
+                    </div>
+                    <div class="imagen elemento4"><img src="/imagenes/cl4.jpg" alt="">
+                        <h3>Camilo Atim</h3>
+                        <h4>Mexico</h4>
+                    </div>
+                    <div class="imagen elemento5"><img src="/imagenes/cl5.png" alt="">
+                        <h3>Carmen Razzotti</h3>
+                        <h4>Ciudad de México</h4>
+                    </div>
+                    <div class="imagen elemento6"><img src="/imagenes/cl6.png" alt="">
+                        <h3>Jesús de Polanco</h3>
+                        <h4>España</h4>
+                    </div>
+                </div>
+            </div>
+            <h2>¡Gracias por visitarnos!</h2>
+        </section>
+    </main>
     <footer>
         <p>Derechos Reservados </p>
     </footer>
-   
+
 </body>
 
 </html>

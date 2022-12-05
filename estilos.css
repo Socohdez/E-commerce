@@ -10,6 +10,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.logo{
+    width:  10rem;
+    border-radius: 100%;
+}
 h1{
     background-color: #E08B9E;
     text-align: center;
@@ -17,6 +21,23 @@ h1{
     border:2px solid #611F2D;
     color: #000000;
 }
+h1::first-line {
+    color: rgb(119, 7, 59);
+    text-decoration: underline;
+  }
+
+  h2::first-line {
+    color: rgb(219, 70, 233);
+    text-decoration: underline;
+  }
+h3{
+    background-color: #E08B9E;
+    text-align: center;
+    font: 50px;
+    border:2px solid #611F2D;
+    color: #110346;
+}
+
 img{
     height: auto;
     width: 400px;
@@ -43,3 +64,49 @@ img{
     border-radius: 10px;
 }
 
+.imagen img{
+    width: 100%;
+}
+.galeria{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+@media (min-width:100px){
+    .galeria{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width:520px){
+    .galeria{
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+@media (min-width:728px){
+    .galeria{
+        grid-template-columns: repeat(3, 33.3%);
+    }
+}
+@media (min-width:1024px){
+    .galeria{
+        grid-template-columns: repeat(4, 25%);
+    }
+}
+
+p::first-letter{
+    font-size: 36px;
+    font-weight: bold;
+    color: crimson;
+}
+
+div {
+    border: solid 1px rgb(223, 12, 100);
+   }
+   div p:first-child {
+    color: rgb(20, 50, 182);
+    font-size: 20px;
+  }
